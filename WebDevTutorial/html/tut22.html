@@ -5,16 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alginment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
+        box-sizing: border-box;
       }
+
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      #fruits {
+        float: left;
+        width: 49%;
+      }
+
+      #computer {
+        float: right;
+        width: 49%;
+      }
+
+      #stationary {
+        clear: both;
+        width: 99%;
+      }
+
       .container {
+        width: 900px;
+        border: 3px solid rgb(225, 243, 146);
+        background-color: rgb(163, 236, 241);
+        margin: auto;
       }
+
+      #glasses {
+        width: 99%;
+      }
+
+      p,
+      h3 {
+        text-align: justify;
+      }
+
+      h1 {
+        margin: auto;
+        width: 455px;
+        text-align: center;
+      }
+
       .item {
+        border: 2px solid rgb(231, 76, 76);
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: rgba(99, 189, 241, 0.959);
       }
     </style>
   </head>
   <body>
+    <div class="container">
+      <h1>Welcome to my store</h1>
+    </div>
     <div class="container">
       <div id="fruits" class="item">
         <h3>Fruits</h3>
@@ -35,6 +88,14 @@
       <div id="stationary" class="item">
         <h3>Stationary</h3>
         <p id="stationarypara" class="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          non quae quam aliquam quibusdam cumque obcaecati dolorem possimus, aut
+          culpa ducimus. Eaque, voluptatem reiciendis.
+        </p>
+      </div>
+      <div id="glasses" class="item">
+        <h3>Glasses</h3>
+        <p id="glassespara" class="para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
           non quae quam aliquam quibusdam cumque obcaecati dolorem possimus, aut
           culpa ducimus. Eaque, voluptatem reiciendis.
