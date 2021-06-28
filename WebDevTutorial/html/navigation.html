@@ -7,22 +7,43 @@
     <title>Navigation</title>
     <style>
       .navbar {
-        background-color: azure;
+        background-color: rgb(22, 22, 21);
+        border-radius: 38px;
       }
 
       .navbar ul {
         overflow: auto;
-        margin: 20px auto;
+        color: red;
       }
 
       .navbar li {
         float: left;
+        padding-top: 3px;
         list-style: none;
+        color: white;
+        margin: 13px 10px;
       }
 
       .navbar li a {
-        margin: 20px;
+        text-decoration: none;
         padding: 3px 3px;
+      }
+
+      .navbar li a:selection {
+        color: red;
+      }
+
+      .search {
+        float: right;
+        color: white;
+        padding: 12px 75px;
+      }
+
+      .navbar input {
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 3px 4px;
+        width: 129px;
       }
     </style>
   </head>
@@ -34,6 +55,14 @@
           <li>ABOUT</li>
           <li>SERVICES</li>
           <li>CONTACT US</li>
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search this website"
+            />
+          </div>
         </ul>
       </nav>
     </header>
